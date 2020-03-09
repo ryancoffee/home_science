@@ -121,13 +121,13 @@ set timestamp  font "" norotate
 set trange [ * : * ] noreverse nowriteback
 set urange [ * : * ] noreverse nowriteback
 set vrange [ * : * ] noreverse nowriteback
-set xlabel "" 
+set xlabel "fill [185-190 max]" 
 set xlabel  font "" textcolor lt -1 norotate
 set x2label "" 
 set x2label  font "" textcolor lt -1 norotate
 set xrange [ * : * ] noreverse writeback
 set x2range [ * : * ] noreverse writeback
-set ylabel "" 
+set ylabel "roll time [s]" 
 set ylabel  font "" textcolor lt -1 rotate
 set y2label "" 
 set y2label  font "" textcolor lt -1 rotate
@@ -169,10 +169,11 @@ file4 = "data_03072020_25mmChia4_4deg.dat"
 file = "data_03072020.dat"
 file10 = "data_03072020_25mmChia10deg.dat"
 file5 = "data_03072020_25mmChia5_7deg.dat"
+x = 0.0
 file7 = "data_03082020_chia_7_6deg.dat"
 file8 = "data_03082020_chia_8_3deg.dat"
 file79 = "data_03082020_25mmChia7_97deg.dat"
 file78 = "data_03082020_chia7_8deg.dat"
 ## Last datafile plotted: "data_03082020_chia7_8deg.dat"
-plot file4 title '4.4 deg', file5 title '5.7deg', file10 u ($1*190):2 title '10deg',file2 title '2.0 deg' pt 7,file7 title '7.6 deg' pt 7 lc -1, file8 title '8.3 deg' pt 7 lc rgb 'red',file79 pt 7 lc 1 title '7.97deg',file78 pt 7 lc rgb 'blue' title '7.8 deg'
+plot file2 title '2.0 deg' pt 7,file7 title '7.6 deg' pt 7, file8 title '8.3 deg' pt 7,file79 pt 7 lc -1 title '7.97deg',file78 pt 7 lc rgb 'red' title '7.8 deg'
 #    EOF
